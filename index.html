@@ -19,7 +19,7 @@
         }
 
         .container {
-            max-width: 80%;
+            max-width: 90%;
             margin: 0 auto;
             background: rgba(255, 255, 255, 0.95);
             border-radius: 20px;
@@ -63,8 +63,8 @@
             transition: transform .3s ease, box-shadow .3s ease;
 
             /* 关键：让卡片宽度弹性生长，但不超过 420px */
-            max-width: 280px; /* 大屏时不会无限拉宽 */
-            width: 120%; /* 在网格项允许范围内尽量撑满 */
+            max-width: 250px; /* 大屏时不会无限拉宽 */
+            width: 100%; /* 在网格项允许范围内尽量撑满 */
             margin: 0 0; /* 网格项本身居中，视觉更整齐 */
         }
 
@@ -102,7 +102,7 @@
         }
 
         audio {
-            width: 100%;
+            width: 80%;
             margin-top: 15px;
         }
 
@@ -195,12 +195,12 @@
         validated in the experiments.</p>
 
     <div class="comparison-section">
-        <h2 class="comparison-title">Direct Comparisons</h2>
+        <h2 class="comparison-title">Uniform</h2>
         <div class="audio-grid">
             <div class="audio-card">
-                <h3 class="audio-title">Sample 1: Gender Perception</h3>
+                <h3 class="audio-title">Original</h3>
                 <div class="attributes">
-                    <span class="attribute">Actual Age: 35</span>
+                    <span class="attribute">Intensity: </span>
                 </div>
                 <audio controls>
                     <source src="audio/sample1_gender.mp3" type="audio/mpeg">
@@ -209,9 +209,9 @@
             </div>
 
             <div class="audio-card">
-                <h3 class="audio-title">Sample 1: Gender Perception</h3>
+                <h3 class="audio-title">Regen</h3>
                 <div class="attributes">
-                    <span class="attribute">Actual Age: 35</span>
+                    <span class="attribute">Intensity: </span>
                 </div>
                 <audio controls>
                     <source src="audio/sample1_gender.mp3" type="audio/mpeg">
@@ -220,9 +220,9 @@
             </div>
 
             <div class="audio-card">
-                <h3 class="audio-title">Sample 1: Gender Perception</h3>
+                <h3 class="audio-title">Maximum</h3>
                 <div class="attributes">
-                    <span class="attribute">Actual Age: 35</span>
+                    <span class="attribute">Intensity: </span>
                 </div>
                 <audio controls>
                     <source src="audio/sample1_gender.mp3" type="audio/mpeg">
@@ -231,9 +231,9 @@
             </div>
 
             <div class="audio-card">
-                <h3 class="audio-title">Sample 1: Gender Perception</h3>
+                <h3 class="audio-title">Highest</h3>
                 <div class="attributes">
-                    <span class="attribute">Actual Age: 35</span>
+                    <span class="attribute">Intensity: </span>
                 </div>
                 <audio controls>
                     <source src="audio/sample1_gender.mp3" type="audio/mpeg">
@@ -242,12 +242,22 @@
             </div>
 
             <!--            <div class="audio-card">-->
+            <!--                <h3 class="audio-title">Regen</h3>-->
+            <!--                <div class="attributes">-->
+            <!--                    <span class="attribute">Intensity: </span>-->
+            <!--                </div>-->
+            <!--                <audio controls>-->
+            <!--                    <source src="audio/sample1_gender.mp3" type="audio/mpeg">-->
+            <!--                    Your browser does not support the audio element.-->
+            <!--                </audio>-->
+            <!--            </div>-->
+            <!--            <div class="audio-card">-->
             <!--                <h3 class="audio-title">Sample 2: Age Estimation</h3>-->
             <!--                <p class="audio-description">-->
             <!--                    A speaker with vocal characteristics that create significant disagreement between human and machine age estimation algorithms.-->
             <!--                </p>-->
             <!--                <div class="attributes">-->
-            <!--                    <span class="attribute">Actual Age: 35</span>-->
+            <!--                    <span class="attribute">Intensity: </span>-->
             <!--                    <span class="attribute">Duration: 3.1s</span>-->
             <!--                </div>-->
             <!--                <audio controls>-->
@@ -255,16 +265,66 @@
             <!--                    Your browser does not support the audio element.-->
             <!--                </audio>-->
             <!--            </div>-->
+        </div>
+    </div>
+
+
+    <div class="comparison-section">
+        <h2 class="comparison-title">Gaussian</h2>
+        <div class="audio-grid">
+            <div class="audio-card">
+                <h3 class="audio-title">Original</h3>
+                <div class="attributes">
+                    <span class="attribute">Intensity: </span>
+                </div>
+                <audio controls>
+                    <source src="audio/sample1_gender.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="audio-card">
+                <h3 class="audio-title">Regen</h3>
+                <div class="attributes">
+                    <span class="attribute">Intensity: </span>
+                </div>
+                <audio controls>
+                    <source src="audio/sample1_gender.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="audio-card">
+                <h3 class="audio-title">Maximum</h3>
+                <div class="attributes">
+                    <span class="attribute">Intensity: </span>
+                </div>
+                <audio controls>
+                    <source src="audio/sample1_gender.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="audio-card">
+                <h3 class="audio-title">Highest</h3>
+                <div class="attributes">
+                    <span class="attribute">Intensity: </span>
+                </div>
+                <audio controls>
+                    <source src="audio/sample1_gender.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
         </div>
     </div>
 
     <div class="comparison-section">
-        <h2 class="comparison-title">Direct Comparisons</h2>
+        <h2 class="comparison-title">Speckle</h2>
         <div class="audio-grid">
             <div class="audio-card">
-                <h3 class="audio-title">Sample 1: Gender Perception</h3>
+                <h3 class="audio-title">Original</h3>
                 <div class="attributes">
-                    <span class="attribute">Actual Age: 35</span>
+                    <span class="attribute">Intensity: </span>
                 </div>
                 <audio controls>
                     <source src="audio/sample1_gender.mp3" type="audio/mpeg">
@@ -273,9 +333,9 @@
             </div>
 
             <div class="audio-card">
-                <h3 class="audio-title">Sample 1: Gender Perception</h3>
+                <h3 class="audio-title">Regen</h3>
                 <div class="attributes">
-                    <span class="attribute">Actual Age: 35</span>
+                    <span class="attribute">Intensity: </span>
                 </div>
                 <audio controls>
                     <source src="audio/sample1_gender.mp3" type="audio/mpeg">
@@ -284,9 +344,9 @@
             </div>
 
             <div class="audio-card">
-                <h3 class="audio-title">Sample 1: Gender Perception</h3>
+                <h3 class="audio-title">Maximum</h3>
                 <div class="attributes">
-                    <span class="attribute">Actual Age: 35</span>
+                    <span class="attribute">Intensity: </span>
                 </div>
                 <audio controls>
                     <source src="audio/sample1_gender.mp3" type="audio/mpeg">
@@ -295,9 +355,9 @@
             </div>
 
             <div class="audio-card">
-                <h3 class="audio-title">Sample 1: Gender Perception</h3>
+                <h3 class="audio-title">Highest</h3>
                 <div class="attributes">
-                    <span class="attribute">Actual Age: 35</span>
+                    <span class="attribute">Intensity: </span>
                 </div>
                 <audio controls>
                     <source src="audio/sample1_gender.mp3" type="audio/mpeg">
@@ -306,12 +366,22 @@
             </div>
 
             <!--            <div class="audio-card">-->
+            <!--                <h3 class="audio-title">Regen</h3>-->
+            <!--                <div class="attributes">-->
+            <!--                    <span class="attribute">Intensity: </span>-->
+            <!--                </div>-->
+            <!--                <audio controls>-->
+            <!--                    <source src="audio/sample1_gender.mp3" type="audio/mpeg">-->
+            <!--                    Your browser does not support the audio element.-->
+            <!--                </audio>-->
+            <!--            </div>-->
+            <!--            <div class="audio-card">-->
             <!--                <h3 class="audio-title">Sample 2: Age Estimation</h3>-->
             <!--                <p class="audio-description">-->
             <!--                    A speaker with vocal characteristics that create significant disagreement between human and machine age estimation algorithms.-->
             <!--                </p>-->
             <!--                <div class="attributes">-->
-            <!--                    <span class="attribute">Actual Age: 35</span>-->
+            <!--                    <span class="attribute">Intensity: </span>-->
             <!--                    <span class="attribute">Duration: 3.1s</span>-->
             <!--                </div>-->
             <!--                <audio controls>-->
@@ -320,31 +390,181 @@
             <!--                </audio>-->
             <!--            </div>-->
         </div>
-        <!--        <div class="comparison-pair">-->
-        <!--            <div class="audio-card">-->
-        <!--                <h3 class="audio-title">Machine Prediction<span class="machine-tag">MACHINE</span></h3>-->
-        <!--                <p class="audio-description">-->
-        <!--                    Audio sample that machines consistently classify as "young female" with 95% confidence.-->
-        <!--                </p>-->
-        <!--                <audio controls>-->
-        <!--                    <source src="audio/machine_sample.mp3" type="audio/mpeg">-->
-        <!--                    Your browser does not support the audio element.-->
-        <!--                </audio>-->
-        <!--            </div>-->
-
-        <!--            <div class="audio-card">-->
-        <!--                <h3 class="audio-title">Human Perception<span class="human-tag">HUMAN</span></h3>-->
-        <!--                <p class="audio-description">-->
-        <!--                    The same audio sample that 89% of human listeners identify as "middle-aged male".-->
-        <!--                </p>-->
-        <!--                <audio controls>-->
-        <!--                    <source src="audio/human_sample.mp3" type="audio/mpeg">-->
-        <!--                    Your browser does not support the audio element.-->
-        <!--                </audio>-->
-        <!--            </div>-->
-        <!--        </div>-->
     </div>
 
+
+    <div class="comparison-section">
+        <h2 class="comparison-title">Salt</h2>
+        <div class="audio-grid">
+            <div class="audio-card">
+                <h3 class="audio-title">Original</h3>
+                <div class="attributes">
+                    <span class="attribute">Intensity: </span>
+                </div>
+                <audio controls>
+                    <source src="audio/sample1_gender.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="audio-card">
+                <h3 class="audio-title">Regen</h3>
+                <div class="attributes">
+                    <span class="attribute">Intensity: </span>
+                </div>
+                <audio controls>
+                    <source src="audio/sample1_gender.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="audio-card">
+                <h3 class="audio-title">Maximum</h3>
+                <div class="attributes">
+                    <span class="attribute">Intensity: </span>
+                </div>
+                <audio controls>
+                    <source src="audio/sample1_gender.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="audio-card">
+                <h3 class="audio-title">Highest</h3>
+                <div class="attributes">
+                    <span class="attribute">Intensity: </span>
+                </div>
+                <audio controls>
+                    <source src="audio/sample1_gender.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+    </div>
+
+    <div class="comparison-section">
+        <h2 class="comparison-title">Subspace removal</h2>
+        <div class="audio-grid">
+            <div class="audio-card">
+                <h3 class="audio-title">Original</h3>
+                <div class="attributes">
+                    <span class="attribute">Intensity: </span>
+                </div>
+                <audio controls>
+                    <source src="audio/sample1_gender.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="audio-card">
+                <h3 class="audio-title">Regen</h3>
+                <div class="attributes">
+                    <span class="attribute">Intensity: </span>
+                </div>
+                <audio controls>
+                    <source src="audio/sample1_gender.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="audio-card">
+                <h3 class="audio-title">Maximum</h3>
+                <div class="attributes">
+                    <span class="attribute">Intensity: </span>
+                </div>
+                <audio controls>
+                    <source src="audio/sample1_gender.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="audio-card">
+                <h3 class="audio-title">Highest</h3>
+                <div class="attributes">
+                    <span class="attribute">Intensity: </span>
+                </div>
+                <audio controls>
+                    <source src="audio/sample1_gender.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <!--            <div class="audio-card">-->
+            <!--                <h3 class="audio-title">Regen</h3>-->
+            <!--                <div class="attributes">-->
+            <!--                    <span class="attribute">Intensity: </span>-->
+            <!--                </div>-->
+            <!--                <audio controls>-->
+            <!--                    <source src="audio/sample1_gender.mp3" type="audio/mpeg">-->
+            <!--                    Your browser does not support the audio element.-->
+            <!--                </audio>-->
+            <!--            </div>-->
+            <!--            <div class="audio-card">-->
+            <!--                <h3 class="audio-title">Sample 2: Age Estimation</h3>-->
+            <!--                <p class="audio-description">-->
+            <!--                    A speaker with vocal characteristics that create significant disagreement between human and machine age estimation algorithms.-->
+            <!--                </p>-->
+            <!--                <div class="attributes">-->
+            <!--                    <span class="attribute">Intensity: </span>-->
+            <!--                    <span class="attribute">Duration: 3.1s</span>-->
+            <!--                </div>-->
+            <!--                <audio controls>-->
+            <!--                    <source src="audio/sample2_age.mp3" type="audio/mpeg">-->
+            <!--                    Your browser does not support the audio element.-->
+            <!--                </audio>-->
+            <!--            </div>-->
+        </div>
+    </div>
+
+
+    <div class="comparison-section">
+        <h2 class="comparison-title">MI-FGSM</h2>
+        <div class="audio-grid">
+            <div class="audio-card">
+                <h3 class="audio-title">Original</h3>
+                <div class="attributes">
+                    <span class="attribute">Intensity: </span>
+                </div>
+                <audio controls>
+                    <source src="audio/sample1_gender.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="audio-card">
+                <h3 class="audio-title">Regen</h3>
+                <div class="attributes">
+                    <span class="attribute">Intensity: </span>
+                </div>
+                <audio controls>
+                    <source src="audio/sample1_gender.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="audio-card">
+                <h3 class="audio-title">Maximum</h3>
+                <div class="attributes">
+                    <span class="attribute">Intensity: </span>
+                </div>
+                <audio controls>
+                    <source src="audio/sample1_gender.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="audio-card">
+                <h3 class="audio-title">Highest</h3>
+                <div class="attributes">
+                    <span class="attribute">Intensity: </span>
+                </div>
+                <audio controls>
+                    <source src="audio/sample1_gender.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+    </div>
     <div class="footer">
         <p>For more information about this research, visit our GitHub repository.</p>
         <a href="https://github.com/yourusername/machine-human-speech-perception-gap" class="github-link">
